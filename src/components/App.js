@@ -1,9 +1,24 @@
-import React from 'react'
+import React from "react";
+import { Route, BrowserRouter } from "react-router-dom";
+
+const PageOne = () => {
+  return <div>PageOne</div>;
+};
+const PageTwo = () => {
+  return <div>PageTwo</div>;
+};
 
 const App = () => {
   return (
-    <div>App</div>
-  )
-}
+    <div>
+      <BrowserRouter>
+        <div>
+          <Route path="/" exact component={PageOne} />
+          <Route path="/pagetwo" component={PageTwo} />
+        </div>
+      </BrowserRouter>
+    </div>
+  );
+};
 
-export default App
+export default App;
