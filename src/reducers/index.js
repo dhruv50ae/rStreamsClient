@@ -1,7 +1,7 @@
 import { combineReducers } from "redux";
 
 export default combineReducers({
-  replaceMe: () => {
-    "second";
-  },
+  replaceMe: () => 
+    "second"
+  ,
 });
