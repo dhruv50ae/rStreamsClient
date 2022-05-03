@@ -10,8 +10,8 @@ class StreamCreate extends Component {
       </div>
     );
   }
-  onSubmit(formValue) {
-    console.log(formValue);
+  onSubmit(formValues) {
+    console.log(formValues);
   }
   render() {
     return (
